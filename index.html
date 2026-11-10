@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101a31">
+  <title>Birds &amp; Bricks — Build. Brace. Bonk.</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-rounded, "Trebuchet MS", system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #101a31; }
+    body { display: grid; place-items: center; }
+    #game { display: block; width: min(100vw, 1280px); height: min(100vh, 720px); aspect-ratio: 16 / 9; touch-action: none; user-select: none; cursor: crosshair; }
+    @media (max-aspect-ratio: 16/9) { #game { width: 100vw; height: auto; } }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="1280" height="720" aria-label="Birds and Bricks game"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
